@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFCrud.PersonPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCrud"
+        mc:Ignorable="d"
+        Title="PersonPage" Height="450" Width="800" Name="Crud" Loaded="Crud_Loaded">
+    <Grid>
+        <Label Content="PersonDetails" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="57" Width="760" FontSize="35" FontWeight="Bold" HorizontalContentAlignment="Center" Background="#FFC16B6B"/>
+        <TextBlock HorizontalAlignment="Left" Margin="15,76,0,0" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Height="36" Width="73" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="108,76,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="36" Width="107" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="233,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="107" FontSize="20"><Run Text="Email"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="361,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="108" FontSize="20" RenderTransformOrigin="0.644,0.459"><Run Text="Address"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="531,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="146" FontSize="20"><Run Text="MobileNumber"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="txtid" HorizontalAlignment="Left" Margin="10,112,0,0" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Width="57" Height="43" FontSize="20"/>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Margin="76,112,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="114" Height="43" FontSize="20"/>
+        <TextBox x:Name="txtemail" HorizontalAlignment="Left" Margin="196,112,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="114" Height="43" FontSize="20"/>
+        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Margin="324,112,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="182" Height="43" FontSize="20"/>
+        <TextBox x:Name="txtmbnum" HorizontalAlignment="Left" Margin="528,112,0,0" TextWrapping="Wrap" Text="MobileNumber" VerticalAlignment="Top" Width="182" Height="43" FontSize="20"/>
+        <Button x:Name="btnview" Content="View" HorizontalAlignment="Left" Margin="280,296,0,0" VerticalAlignment="Top" Height="38" Width="135" FontSize="20" Click="btnview_Click"/>
+        <Button x:Name="btninsert" Content="Insert" HorizontalAlignment="Left" Margin="94,179,0,0" VerticalAlignment="Top" Height="38" Width="135" FontSize="20" Click="btninsert_Click"/>
+        <Button x:Name="btnupdate" Content="Update" HorizontalAlignment="Left" Margin="310,179,0,0" VerticalAlignment="Top" Height="38" Width="135" FontSize="20" Click="btnupdate_Click"/>
+        <Button x:Name="btndelete" Content="Delete" HorizontalAlignment="Left" Margin="528,179,0,0" VerticalAlignment="Top" Height="38" Width="136" FontSize="20" Click="btndelete_Click"/>
+
+    </Grid>
+</Window>

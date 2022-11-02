@@ -1,0 +1,12 @@
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\bin\WcfCrud.dll.config
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\bin\WcfCrud.dll
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\bin\WcfCrud.pdb
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\bin\EntityFramework.dll
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\bin\EntityFramework.SqlServer.dll
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\bin\EntityFramework.xml
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\bin\EntityFramework.SqlServer.xml
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\obj\Debug\WcfCrud.csproj.AssemblyReference.cache
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\obj\Debug\WcfCrud.csproj.CoreCompileInputs.cache
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\obj\Debug\WcfCrud.csproj.CopyComplete
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\obj\Debug\WcfCrud.dll
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF6\WcfCrud\WcfCrud\obj\Debug\WcfCrud.pdb
