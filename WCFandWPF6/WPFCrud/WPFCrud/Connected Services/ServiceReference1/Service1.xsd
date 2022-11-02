@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:61698/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfCrud" />
+  <xs:import schemaLocation="http://localhost:61698/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <xs:element name="GetData">
     <xs:complexType>
       <xs:sequence>
@@ -63,6 +64,20 @@
       <xs:sequence />
     </xs:complexType>
   </xs:element>
+  <xs:element name="SearchPerson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchPersonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SearchPersonResult" nillable="true" type="q4:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="conv">
     <xs:complexType>
       <xs:sequence>
@@ -77,7 +92,7 @@
   <xs:element name="convResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfCrud" minOccurs="0" name="convResult" nillable="true" type="q4:Person" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfCrud" minOccurs="0" name="convResult" nillable="true" type="q5:Person" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

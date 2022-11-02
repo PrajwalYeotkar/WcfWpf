@@ -25,6 +25,8 @@ namespace WcfCrud
         void UpdatePerson(Person pobj);
         [OperationContract]
         void DeletePerson(int Id);
+        [OperationContract]
+        Dictionary<String,String> SearchPerson(int Id);
 
         [OperationContract]
         Person conv(int id, int mobilenumber, string name, string address, string email);

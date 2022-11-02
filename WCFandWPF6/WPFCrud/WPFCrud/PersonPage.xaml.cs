@@ -36,7 +36,7 @@ namespace WPFCrud
         {
             var viewpage = new ViewPage();
             viewpage.Show();
-            
+            this.Close();
         }
 
         private void btninsert_Click(object sender, RoutedEventArgs e)
@@ -95,6 +95,20 @@ namespace WPFCrud
 
         }
 
-        
+        private void btnsearch_Click(object sender, RoutedEventArgs e)
+        {
+            Service1Client client = new Service1Client();
+            int id;
+            Int32.TryParse(txtid.Text, out id);
+            Dictionary<string, string> Sperson = new Dictionary<string, string>();
+
+            Sperson = client.SearchPerson(id);
+
+            txtid.Text = Sperson["Id"];
+            txtaddress.Text = Sperson["Address"];
+            txtemail.Text = Sperson["Email"];
+            txtmbnum.Text = Sperson["Mbnum"];
+            txtname.Text = Sperson["Name"];
+        }
     }
 }

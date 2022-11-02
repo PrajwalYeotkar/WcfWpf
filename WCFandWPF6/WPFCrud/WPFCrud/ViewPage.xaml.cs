@@ -22,19 +22,20 @@ namespace WPFCrud
     public partial class ViewPage : Window
     {
         List<Dictionary<String, String>> list = new List<Dictionary<String, String>>();
-        int id = 0;
+
+        int id,len;
 
         public ViewPage()
         {
             InitializeComponent();
             Service1Client client = new Service1Client();
             var lst = client.GetPerson();
-
+            id = 0;
             foreach (var person in lst)
             {
                 Dictionary<String, String> map = new Dictionary<String, String>()
                 {
-                    {"id",person.Id.ToString()},
+                    {"Id",person.Id.ToString()},
                     {"Mbnum",person.MobileNumber.ToString()},
                     {"Address",person.Address},
                     {"Email",person.Email},
@@ -42,19 +43,19 @@ namespace WPFCrud
                 };
                 list.Add(map);
             }
-
+            len=list.Count;
+//            MessageBox.Show("Length : " + len);
         }
 
         private void btnview_Click(object sender, RoutedEventArgs e)
         {
+            id = 0;
             Dictionary<String, String> person1 = list[id];
-                txtid.Text = person1["id"];
+                txtid.Text = person1["Id"];
                 txtname.Text = person1["Name"];
                 txtaddress.Text = person1["Address"];
                 txtemail.Text = person1["Email"];
                 txtmbnum.Text = person1["Mbnum"];
-            
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -65,13 +66,24 @@ namespace WPFCrud
 
         private void btnnext_Click(object sender, RoutedEventArgs e)
         {
-            Dictionary<String, String> person1 = list[++id];
-            txtid.Text = person1["id"];
-            txtname.Text = person1["Name"];
-            txtaddress.Text = person1["Address"];
-            txtemail.Text = person1["Email"];
-            txtmbnum.Text = person1["Mbnum"];
+            if (id < len-1)
+            {
+                Dictionary<String, String> person1 = list[++id];
+                txtid.Text = person1["Id"];
+                txtname.Text = person1["Name"];
+                txtaddress.Text = person1["Address"];
+                txtemail.Text = person1["Email"];
+                txtmbnum.Text = person1["Mbnum"];
+            }
+            
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var crudpage = new PersonPage();
+            crudpage.Show();
+            this.Close();
         }
 
         private void btnprevious_Click(object sender, RoutedEventArgs e)
@@ -79,7 +91,7 @@ namespace WPFCrud
             if (id >= 1)
             {
                 Dictionary<String, String> person1 = list[--id];
-                txtid.Text = person1["id"];
+                txtid.Text = person1["Id"];
                 txtname.Text = person1["Name"];
                 txtaddress.Text = person1["Address"];
                 txtemail.Text = person1["Email"];

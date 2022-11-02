@@ -24,6 +24,7 @@ namespace WcfCrud
             };
             return p;
         }
+
         public void DeletePerson(int id)
         {
             PersonContext po = new PersonContext();
@@ -52,6 +53,23 @@ namespace WcfCrud
             PersonContext po = new PersonContext();
             po.Persons.Add(pobj);
             po.SaveChanges();
+        }
+
+        public Dictionary<String,String> SearchPerson(int id)
+        {
+            PersonContext po = new PersonContext();
+            var c = (from per in po.Persons
+                     where per.Id == id
+                     select per).First();
+            Dictionary<String, String> result = new Dictionary<String, String>() {
+                { "Id",c.Id.ToString()},
+                { "Name",c.Name},
+                { "Address",c.Address},
+                { "Mbnum",c.MobileNumber.ToString()},
+                { "Email",c.Email}
+            };
+
+            return result;
         }
 
         public void UpdatePerson(Person pobj)

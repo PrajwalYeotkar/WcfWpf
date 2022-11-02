@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="http://localhost:61698/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:61698/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:61698/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfCrud" />
+      <xsd:import schemaLocation="http://localhost:61698/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IService1_GetData_InputMessage">
@@ -37,6 +38,12 @@
   <wsdl:message name="IService1_DeletePerson_OutputMessage">
     <wsdl:part name="parameters" element="tns:DeletePersonResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_SearchPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPerson" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPersonResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_conv_InputMessage">
     <wsdl:part name="parameters" element="tns:conv" />
   </wsdl:message>
@@ -63,6 +70,10 @@
     <wsdl:operation name="DeletePerson">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeletePerson" message="tns:IService1_DeletePerson_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeletePersonResponse" message="tns:IService1_DeletePerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchPerson" message="tns:IService1_SearchPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchPersonResponse" message="tns:IService1_SearchPerson_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="conv">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/conv" message="tns:IService1_conv_InputMessage" />
@@ -109,6 +120,15 @@
     </wsdl:operation>
     <wsdl:operation name="DeletePerson">
       <soap:operation soapAction="http://tempuri.org/IService1/DeletePerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPerson">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchPerson" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

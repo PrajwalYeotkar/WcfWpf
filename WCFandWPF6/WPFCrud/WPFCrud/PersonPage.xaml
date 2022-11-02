@@ -11,17 +11,18 @@
         <TextBlock HorizontalAlignment="Left" Margin="15,76,0,0" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Height="36" Width="73" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="108,76,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="36" Width="107" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="233,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="107" FontSize="20"><Run Text="Email"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="361,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="108" FontSize="20" RenderTransformOrigin="0.644,0.459"><Run Text="Address"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="531,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="146" FontSize="20"><Run Text="MobileNumber"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="407,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="108" FontSize="20" RenderTransformOrigin="0.644,0.459"><Run Text="Address"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="596,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="146" FontSize="20"><Run Text="MobileNumber"/><LineBreak/><Run/></TextBlock>
         <TextBox x:Name="txtid" HorizontalAlignment="Left" Margin="10,112,0,0" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Width="57" Height="43" FontSize="20"/>
         <TextBox x:Name="txtname" HorizontalAlignment="Left" Margin="76,112,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="114" Height="43" FontSize="20"/>
-        <TextBox x:Name="txtemail" HorizontalAlignment="Left" Margin="196,112,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="114" Height="43" FontSize="20"/>
-        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Margin="324,112,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="182" Height="43" FontSize="20"/>
-        <TextBox x:Name="txtmbnum" HorizontalAlignment="Left" Margin="528,112,0,0" TextWrapping="Wrap" Text="MobileNumber" VerticalAlignment="Top" Width="182" Height="43" FontSize="20"/>
-        <Button x:Name="btnview" Content="View" HorizontalAlignment="Left" Margin="280,296,0,0" VerticalAlignment="Top" Height="38" Width="135" FontSize="20" Click="btnview_Click"/>
-        <Button x:Name="btninsert" Content="Insert" HorizontalAlignment="Left" Margin="94,179,0,0" VerticalAlignment="Top" Height="38" Width="135" FontSize="20" Click="btninsert_Click"/>
-        <Button x:Name="btnupdate" Content="Update" HorizontalAlignment="Left" Margin="310,179,0,0" VerticalAlignment="Top" Height="38" Width="135" FontSize="20" Click="btnupdate_Click"/>
-        <Button x:Name="btndelete" Content="Delete" HorizontalAlignment="Left" Margin="528,179,0,0" VerticalAlignment="Top" Height="38" Width="136" FontSize="20" Click="btndelete_Click"/>
+        <TextBox x:Name="txtemail" HorizontalAlignment="Left" Margin="196,112,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="198" Height="43" FontSize="20"/>
+        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Margin="399,112,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="182" Height="43" FontSize="20"/>
+        <TextBox x:Name="txtmbnum" HorizontalAlignment="Left" Margin="596,112,0,0" TextWrapping="Wrap" Text="MobileNumber" VerticalAlignment="Top" Width="182" Height="43" FontSize="20"/>
+        <Button x:Name="btnview" Content="View" HorizontalAlignment="Left" Margin="418,314,0,0" VerticalAlignment="Top" Height="38" Width="136" FontSize="20" Click="btnview_Click"/>
+        <Button x:Name="btninsert" Content="Insert" HorizontalAlignment="Left" Margin="66,222,0,0" VerticalAlignment="Top" Height="38" Width="134" FontSize="20" Click="btninsert_Click"/>
+        <Button x:Name="btnupdate" Content="Update" HorizontalAlignment="Left" Margin="295,222,0,0" VerticalAlignment="Top" Height="38" Width="135" FontSize="20" Click="btnupdate_Click"/>
+        <Button x:Name="btndelete" Content="Delete" HorizontalAlignment="Left" Margin="533,222,0,0" VerticalAlignment="Top" Height="38" Width="136" FontSize="20" Click="btndelete_Click"/>
+        <Button x:Name="btnsearch" Content="Search" HorizontalAlignment="Left" Margin="183,315,0,0" VerticalAlignment="Top" Height="37" Width="108" FontSize="20" Click="btnsearch_Click"/>
 
     </Grid>
 </Window>

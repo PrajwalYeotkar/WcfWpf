@@ -156,6 +156,12 @@ namespace WPFCrud.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeletePerson", ReplyAction="http://tempuri.org/IService1/DeletePersonResponse")]
         System.Threading.Tasks.Task DeletePersonAsync(int Id);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchPerson", ReplyAction="http://tempuri.org/IService1/SearchPersonResponse")]
+        System.Collections.Generic.Dictionary<string, string> SearchPerson(int Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchPerson", ReplyAction="http://tempuri.org/IService1/SearchPersonResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, string>> SearchPersonAsync(int Id);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/conv", ReplyAction="http://tempuri.org/IService1/convResponse")]
         WPFCrud.ServiceReference1.Person conv(int id, int mobilenumber, string name, string address, string email);
         
@@ -228,6 +234,14 @@ namespace WPFCrud.ServiceReference1 {
         
         public System.Threading.Tasks.Task DeletePersonAsync(int Id) {
             return base.Channel.DeletePersonAsync(Id);
+        }
+        
+        public System.Collections.Generic.Dictionary<string, string> SearchPerson(int Id) {
+            return base.Channel.SearchPerson(Id);
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, string>> SearchPersonAsync(int Id) {
+            return base.Channel.SearchPersonAsync(Id);
         }
         
         public WPFCrud.ServiceReference1.Person conv(int id, int mobilenumber, string name, string address, string email) {
