@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800" x:Name="Crud" Loaded="Crud_Loaded">
+    <Grid>
+        <Label HorizontalAlignment="Left" Margin="40,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,-1.732" Height="38" Width="86" FontSize="25" Content="Id"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="40,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,-1.732" Height="38" Width="86" FontSize="25"/>
+        <Label HorizontalAlignment="Left" Margin="40,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,-1.732" Height="38" Width="107" FontSize="25" Content="Gender"/>
+        <TextBox x:Name="txtid" HorizontalAlignment="Left" Margin="234,39,0,0" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Width="258" Height="37" FontSize="25"/>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Margin="234,83,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="258" Height="37" FontSize="25"/>
+        <Button x:Name="btninsert" Content="Insert" HorizontalAlignment="Left" Margin="40,180,0,0" VerticalAlignment="Top" Height="45" Width="145" FontSize="25" Click="btninsert_Click"/>
+        <Button x:Name="btnupdate" Content="Update" HorizontalAlignment="Left" Margin="240,180,0,0" VerticalAlignment="Top" Height="45" Width="160" FontSize="25" Click="btnupdate_Click"/>
+        <Button x:Name="btndelete" Content="Delete" HorizontalAlignment="Left" Margin="472,181,0,0" VerticalAlignment="Top" Height="45" Width="144" FontSize="25" Click="btndelete_Click"/>
+        <ComboBox x:Name="txtgender" HorizontalAlignment="Left" Margin="234,126,0,0" VerticalAlignment="Top" Width="258" Height="40" FontSize="25">
+            <ComboBox.Items>
+                <ComboBoxItem>Male</ComboBoxItem>
+                <ComboBoxItem>Female</ComboBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+        <DataGrid AutoGenerateColumns="True" Margin="40,254,69,34" Name="gdView" SelectionChanged="gdView_SelectionChanged"/>
+
+    </Grid>
+</Window>

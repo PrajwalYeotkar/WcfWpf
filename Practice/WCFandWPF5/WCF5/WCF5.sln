@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF5", "WCF5\WCF5.csproj", "{FB204CF4-EFE2-433B-90E1-95097878C394}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB204CF4-EFE2-433B-90E1-95097878C394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB204CF4-EFE2-433B-90E1-95097878C394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB204CF4-EFE2-433B-90E1-95097878C394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB204CF4-EFE2-433B-90E1-95097878C394}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D424E989-5EE9-4253-AE9D-B2DD7D9864F8}
+	EndGlobalSection
+EndGlobal

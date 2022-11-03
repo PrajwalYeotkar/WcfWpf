@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="218,37,0,0" TextWrapping="Wrap" Text="Members" VerticalAlignment="Top" Height="56" Width="259" TextAlignment="Center" FontSize="40" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="93,142,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="46" Width="138" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="93,217,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Height="38" Width="97" FontSize="25"/>
+        <TextBox x:Name="nametextbox" HorizontalAlignment="Left" Margin="317,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297" Height="46" FontSize="25"/>
+        <ComboBox x:Name="GenderComboBox" HorizontalAlignment="Left" Margin="317,217,0,0" VerticalAlignment="Top" Width="297" Height="38" FontSize="25">
+            <ComboBox.Items>
+                <ComboBoxItem> Male</ComboBoxItem>
+                <ComboBoxItem>Female</ComboBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+        <Button x:Name="InsertBtn" Content="Insert" HorizontalAlignment="Left" Margin="218,315,0,0" VerticalAlignment="Top" Height="68" Width="291" FontSize="30" Click="InsertBtn_Click"/>
+
+    </Grid>
+</Window>

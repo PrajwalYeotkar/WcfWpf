@@ -1,0 +1,7 @@
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF 2\WcfApp2\WcfApp2\bin\WcfApp2.dll.config
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF 2\WcfApp2\WcfApp2\bin\WcfApp2.dll
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF 2\WcfApp2\WcfApp2\bin\WcfApp2.pdb
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF 2\WcfApp2\WcfApp2\obj\Debug\WcfApp2.csproj.AssemblyReference.cache
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF 2\WcfApp2\WcfApp2\obj\Debug\WcfApp2.csproj.CoreCompileInputs.cache
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF 2\WcfApp2\WcfApp2\obj\Debug\WcfApp2.dll
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF 2\WcfApp2\WcfApp2\obj\Debug\WcfApp2.pdb

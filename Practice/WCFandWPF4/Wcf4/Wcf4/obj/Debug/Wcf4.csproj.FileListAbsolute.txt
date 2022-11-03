@@ -1,0 +1,7 @@
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF4\Wcf4\Wcf4\bin\Wcf4.dll.config
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF4\Wcf4\Wcf4\bin\Wcf4.dll
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF4\Wcf4\Wcf4\bin\Wcf4.pdb
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF4\Wcf4\Wcf4\obj\Debug\Wcf4.csproj.AssemblyReference.cache
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF4\Wcf4\Wcf4\obj\Debug\Wcf4.csproj.CoreCompileInputs.cache
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF4\Wcf4\Wcf4\obj\Debug\Wcf4.dll
+D:\WCF AND WPF\WCF service and WPF client\WCFandWPF4\Wcf4\Wcf4\obj\Debug\Wcf4.pdb

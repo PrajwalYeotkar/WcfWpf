@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="b7f89ef9-f3bc-4edb-a651-00ed2f19aad7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:55759/PrajwalService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PrajwalService.xsd" MetadataType="Schema" ID="e32680b5-5dce-4708-a7f0-f7c585d58f13" SourceId="1" SourceUrl="http://localhost:55759/PrajwalService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PrajwalService1.xsd" MetadataType="Schema" ID="1784c794-7dc5-470e-90f7-63a5999e1ad8" SourceId="1" SourceUrl="http://localhost:55759/PrajwalService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PrajwalService.disco" MetadataType="Disco" ID="2aacc9d3-db50-427b-a72d-6e6d69202344" SourceId="1" SourceUrl="http://localhost:55759/PrajwalService.svc?disco" />
+    <MetadataFile FileName="PrajwalService2.xsd" MetadataType="Schema" ID="7140c9b2-cdf7-49e9-b3bc-6f072fe73db4" SourceId="1" SourceUrl="http://localhost:55759/PrajwalService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PrajwalService.wsdl" MetadataType="Wsdl" ID="1040cbc3-2540-4467-86a9-7a6c2ce6c605" SourceId="1" SourceUrl="http://localhost:55759/PrajwalService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
